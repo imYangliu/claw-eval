@@ -1,0 +1,24 @@
+# Base image via DaoCloud mirror (domestic acceleration).
+# Override at build time if needed:
+#   docker build --build-arg REGISTRY=docker.io -f Dockerfile.agent .
+ARG REGISTRY=docker.m.daocloud.io
+FROM ${REGISTRY}/python:3.11-slim
+
+WORKDIR /workspace
+
+# Install sandbox server dependencies (PyPI via TUNA mirror)
+COPY requirements-sandbox-server.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt \
+        -i https://pypi.tuna.tsinghua.edu.cn/simple \
+        --trusted-host pypi.tuna.tsinghua.edu.cn \
+        --no-cache-dir \
+    && rm /tmp/requirements.txt
+
+# Only copy the sandbox server (not the full agent_eval framework)
+COPY src/agent_eval/sandbox/ /opt/sandbox/
+
+# Optional: playwright support (uncomment to enable browser tool)
+# RUN pip install playwright --no-cache-dir && playwright install --with-deps chromium
+
+EXPOSE 8080
+ENTRYPOINT ["python", "/opt/sandbox/server.py", "--port", "8080"]
