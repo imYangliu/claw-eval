@@ -5,7 +5,10 @@ dist/
 build/
 .eggs/
 .DS_Store
-# Traces (generated output, don't commit)
+.venv/
+uv.lock
 
+# Traces (generated output, don't commit)
+model_traces/
 traces/
 traces_*/
