@@ -20,9 +20,11 @@
 
 Browse the full leaderboard and individual task cases at **[claw-eval.github.io](https://claw-eval.github.io)**.
 
-**Evaluation Logic:**
-* **Current Display:** Results are based on a single trial ($N=1$).
-* **Pass Criterion (3 Trials):** For multi-trial runs, a task is marked as passed if the **mean score > 0.75**.
+**Evaluation Logic (Updated March 2026):**
+
+* **Primary Metric: Pass^3.** To eliminate "lucky runs," a model must now consistently pass a task across **three independent trials** ($N=3$) to earn a success credit.
+* **Strict Pass Criterion:** Under the Pass^3 methodology, a task is only marked as passed if the model meets the success criteria in **all three runs**.
+* **Reproducibility:** We are committed to end-to-end reproducibility. Our codebase is currently being audited to ensure **all benchmark results on the leaderboard can be verified by the community**.
 
 ## Quick Start
 
