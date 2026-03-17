@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.eggs/
+.DS_Store
+.venv/
+uv.lock
+
+# Traces (generated output, don't commit)
+model_traces/
+traces/
+traces_*/
