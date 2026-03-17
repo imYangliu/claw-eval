@@ -14,6 +14,8 @@
 
 </div>
 
+**📢 v1.0.0 is now live!
+Built on reproducible real-world complexity.**
 
 ---
 
@@ -68,7 +70,7 @@ We welcome any kind of contribution. Let us know if you have any suggestions!
 Our test cases are built on the work of the community. We draw from and adapt tasks contributed by OpenClaw, PinBench, OfficeQA, OneMillion-Bench, Finance Agent, and Terminal-Bench 2.0.
 
 ## Contributors
-[Bowen Ye*](https://github.com/pkuYmiracle)(PKU), [Rang Li*](https://github.com/lirang04) (PKU), [Qibin Yang](https://github.com/yangqibin-caibi) (PKU), [Zhihui Xie](https://zhxie.site/)(HKU), [Lei Li](lilei-nlp.github.io)$^\dagger$(HKU, Project Lead)
+[Bowen Ye*](https://github.com/pkuYmiracle)(PKU), [Rang Li*](https://github.com/lirang04) (PKU), [Qibin Yang*](https://github.com/yangqibin-caibi) (PKU), [Zhihui Xie](https://zhxie.site/)(HKU), [Lei Li](lilei-nlp.github.io)$^\dagger$(HKU, Project Lead)
 
 Advisors: [Tong Yang](https://yangtonghome.github.io/) (PKU), [Zhifang Sui](https://cs.pku.edu.cn/info/1226/2014.htm) (PKU), [Lingpeng Kong](https://ikekonglp.github.io/) (HKU), [Qi Liu](https://leuchine.github.io/) (HKU)
 
